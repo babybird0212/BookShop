@@ -1,4 +1,4 @@
-﻿using System;
+﻿  using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -11,8 +11,8 @@ namespace OnlineBookShopTuto.Views.Seller
     public partial class Selling : System.Web.UI.Page
     {
         Models.Functions Con;
-        string Seller = Login.UName;
-        int Seller = Login.User;
+        int Seller = login.User;
+        string SName = login.UName;
         protected void Page_Load(object sender, EventArgs e)
         {
             Con = new Models.Functions();
@@ -47,6 +47,7 @@ namespace OnlineBookShopTuto.Views.Seller
         {
             int NewQty;
             NewQty = Convert.ToInt32(SellingsList.SelectedRow.Cells[3].Text) - Convert.ToInt32(BQtyTb.Value);
+
             string Query = "update BookTbl set BQty = {0} where BId = {1}";
             Query = string.Format(Query, NewQty, SellingsList.SelectedRow.Cells[1].Text);
             Con.SetData(Query);
@@ -70,16 +71,9 @@ namespace OnlineBookShopTuto.Views.Seller
         }
         private void InsertBill()
         {
-            try
-            {
-                string Query = "insert into BillTbl value('{0}',{1},{2})";
-                Query = string.Format(Query, DateTb.Value.ToString(), Seller, Convert.ToInt32(GrdTotalTb.Text));
-                Con.SetData(Query);
-            }
-            catch (Exception Ex)
-            {
-
-            }
+            string Query = "insert into BillTbl value('{0}',{1},{2})";
+            Query = string.Format(Query, System.DateTime.Today, Seller, Convert.ToInt32(GrdTotalTb.Text.Substring(2)));
+            Con.SetData(Query);
         }
         int Grdtotal = 0;
         int Amount;

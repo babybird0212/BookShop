@@ -32,22 +32,22 @@
                     <div class="p-2">
                      <div class="mb-3">
                          <img src="../../Assets/Images/Book.png" height="50" width="50" />
-                         <a href="#" ><label>Billing</label></a>
+                         <a href="../Login.aspx" ><label>Billing</label></a>
                         </div>
                         <div style="height:20px"></div>
                      <div class="mb-3">
                          <img src="../../Assets/Images/user typing.png" height="50" width="50" />
-                         <a href="#" ><label>Authors</label></a>
+                         <a href="../Login.aspx" ><label>Authors</label></a>
                         </div>
                         <div style="height:20px"></div>
                      <div class="mb-3">
                          <img src="../../Assets/Images/user.png" height="50" width="50" />
-                         <a href="#" ><label>Sellers</label></a>
+                         <a href="../Login.aspx" ><label>Sellers</label></a>
                         </div>
                         <div style="height:20px"></div>
                      <div class="mb-3">
                          <img src="../../Assets/Images/categories.png" height="50" width="50" />
-                         <a href="#" ><label>Categories</label></a>
+                         <a href="../Login.aspx" ><label>Categories</label></a>
                         </div> 
                          <div style="height:140px">
                     </div>

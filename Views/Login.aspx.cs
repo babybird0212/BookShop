@@ -10,7 +10,7 @@ namespace OnlineBookShopTuto.Views
 {
     public partial class login : System.Web.UI.Page
     {
-        Models.Functions Con;
+        Models.Functions Con;        
         protected void Page_Load(object sender, EventArgs e)
         {
             Con = new Models.Functions();
