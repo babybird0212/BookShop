@@ -31,7 +31,7 @@
             <div class="row">
                 <asp:Label runat="server" ID="ErrMsg" CssClass="text-danger text-center"></asp:Label>
                 <div class="col d-grid"><asp:Button Text="Update" runat="server" class="btn-warning btn-block btn" ID="EditBtn" OnClick="EditBtn_Click"/></div>
-                <div class="col d-grid"><asp:Button Text="Save" runat="server" class="btn-success btn-block btn" ID="SaveBtn" OnClick="SaveBtn_Click"/></div>
+                <div class="col d-grid"><asp:Button Text="Add" runat="server" class="btn-success btn-block btn" ID="SaveBtn" OnClick="SaveBtn_Click"/></div>
                 <div class="col d-grid"><asp:Button Text="Delete" runat="server" class="btn-danger btn-block btn" ID="DeleteBtn" OnClick="DeleteBtn_Click"/></div>
             </div>
             </div>           
